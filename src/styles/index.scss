@@ -1,13 +1,84 @@
 @import "~bootstrap/scss/bootstrap.scss";
 
-/* 
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap');
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
 
-*/
+h1, .todo-list{
+    font-family: merienda;
+}
+
+h1{
+    margin-bottom: 15px;
+    color: #291D89;
+}
+
+
+.App{
+    
+    height: 8000px;
+    padding: 37px 55px 27px;
+    position: relative;
+    border: 1px solid #B5B5B5;
+    background: green;
+    background: -webkit-linear-gradient(top, #DFE8EC 0%, white 8%) 0 57px;
+    background: -moz-linear-gradient(top, #DFE8EC 0%, white 8%) 0 57px;
+    background: linear-gradient(top, #DFE8EC 0%, white 8%) 0 57px;
+    -webkit-background-size: 100% 30px;
+    -moz-background-size: 100% 30px;
+    -ms-background-size: 100% 30px;
+    background-size: 100% 30px;
+}
+
+.App::before {content:""; z-index:-1; margin:0 1px; width:706px; height:10px; position:absolute; bottom:-3px; left:0; background:white; border:1px solid #B5B5B5;}
+.App::after {content:''; position:absolute; width:0px; top:0; left:39px; bottom:0; border-left:1px solid #F8D3D3;
+}
+
+
+input {
+    min-width: 30%;
+    min-width: 20%;
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+    border-width: 0px;
+    color: #4E67EB;
+}
+
+.todo-container {
+    min-width: 20%;
+    min-width: 10%;
+    font-size: 20px;
+    color: #4E67EB;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 15px;
+    font-size: 20px;
+
+}
+
+
+.buttonDeleteTask {
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    color: tomato;
+}
+
+.todo-button{
+     background-color: transparent;
+    border: none;
+    font-size: 30px;
+    color: #819C4B;
+
+
+ 
+}
+
+.counter{
+    padding: 15px;
+}
