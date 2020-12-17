@@ -11,16 +11,18 @@ function Todos(props) {
 	return (
 		<div>
 			{props.todos.map((todoObj, index) => {
-				return (
-					<div className="container">
-						<p>{todoObj.label}</p>
-						<button
-							className="buttonDeleteTask"
-							onClick={() => deleteHandler(todoObj.label)}>
-							<i class="far fa-trash-alt" />
-						</button>
-					</div>
-				);
+				if (todoObj.label != "") {
+					return (
+						<div key={index} className="container">
+							<p>{todoObj.label}</p>
+							<button
+								className="buttonDeleteTask"
+								onClick={() => deleteHandler(todoObj.label)}>
+								<i className="far fa-trash-alt" />
+							</button>
+						</div>
+					);
+				}
 			})}
 		</div>
 	);

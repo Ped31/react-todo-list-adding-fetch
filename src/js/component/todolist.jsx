@@ -70,7 +70,7 @@ function TodoList() {
 					className="todo-button"
 					type="submit"
 					onClick={submitTodoHandler}>
-					<i class="far fa-plus-square" />
+					<i className="far fa-plus-square" />
 				</button>
 
 				<div className="todo-container">
