@@ -13,7 +13,9 @@ function TodoList() {
 
 	const submitTodoHandler = e => {
 		e.preventDefault();
-		setTodos([...todos, { label: inputText, done: false }]);
+		if (inputText != "" && inputText != null) {
+			setTodos([...todos, { label: inputText, done: false }]);
+		}
 		setInputText("");
 	};
 
@@ -66,10 +68,7 @@ function TodoList() {
 					onChange={inputTextHandler}
 					placeholder="new plan here..."
 				/>
-				<button
-					className="todo-button"
-					type="submit"
-					onClick={submitTodoHandler}>
+				<button className="todo-button" onClick={submitTodoHandler}>
 					<i className="far fa-plus-square" />
 				</button>
 
